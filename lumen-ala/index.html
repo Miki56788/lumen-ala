@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LUMEN ALA — Реклама на LED-экранах в Алматы</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #050505;
+      color: white;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .glass {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #ffffff, #a7a7a7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .modal-hidden {
+      display: none;
+    }
+
+    .modal-visible {
+      display: flex;
+    }
+
+    .uni-chip.active,
+    .duration-btn.active {
+      background: white;
+      color: black;
+      border-color: white;
+    }
+
+    .counter-button:hover {
+      background: rgba(255,255,255,.12);
+    }
+
+    input,
+    textarea {
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: rgba(255,255,255,.5);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-40 border-b border-white/10 bg-black/75 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
+
+      <a href="#" class="font-bold text-xl tracking-tight">
+        LUMEN <span class="text-white/50">ALA</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm text-white/65">
+        <a href="#screens" class="hover:text-white transition">Экраны и локации</a>
+        <a href="#audience" class="hover:text-white transition">Аудитория</a>
+        <a href="#how" class="hover:text-white transition">Как это работает</a>
+        <a href="#brands" class="hover:text-white transition">Брендам</a>
+        <a href="#calculator" class="hover:text-white transition">Рассчитать</a>
+      </nav>
+
+      <button
+        class="open-modal bg-white text-black px-5 py-3 rounded-full text-sm font-semibold hover:bg-white/85 transition">
+        Запустить кампанию
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+
+    <section class="relative min-h-screen pt-32 pb-20 overflow-hidden hero-grid">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,.10),transparent_45%)]"></div>
+
+      <div class="relative max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="max-w-4xl pt-16 lg:pt-24">
+
+          <div class="inline-flex items-center gap-2 border border-white/10 rounded-full px-4 py-2 text-xs text-white/60 mb-8">
+            <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+            LED MEDIA · ALMATY
+          </div>
+
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[.95]">
+            Охватите поколение
+            <span class="gradient-text">Gen Z</span>
+            там, где они учатся.
+          </h1>
+
+          <p class="mt-8 text-lg md:text-xl text-white/55 max-w-2xl leading-relaxed">
+            Размещайте рекламу на LED-экранах внутри крупнейших университетов Алматы
+            и будьте на виду у студентов каждый день.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mt-10">
+            <button
+              class="open-modal bg-white text-black px-7 py-4 rounded-full font-semibold hover:bg-white/85 transition">
+              Запустить кампанию
+            </button>
+
+            <a
+              href="#screens"
+              class="border border-white/15 px-7 py-4 rounded-full font-semibold hover:bg-white/5 transition text-center">
+              Каталог локаций
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-20 relative">
+          <div class="rounded-3xl overflow-hidden border border-white/10 bg-white/5">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAplaceholder"
+              alt="LED screen"
+              class="w-full h-[300px] md:h-[500px] object-cover"
+              onerror="this.style.display='none'; this.parentElement.classList.add('bg-gradient-to-br','from-zinc-900','to-black')"
+            >
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+
+            <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10">
+              <p class="text-xs uppercase tracking-[.25em] text-white/50">
+                DIGITAL OUT OF HOME
+              </p>
+              <p class="text-2xl md:text-4xl font-semibold mt-2">
+                Your brand. Their everyday.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SCREENS -->
+    <section id="screens" class="py-28 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <p class="text-xs uppercase tracking-[.3em] text-white/40">Our screens</p>
+            <h2 class="text-4xl md:text-6xl font-bold mt-4">
+              Экраны в кампусах.
+            </h2>
+          </div>
+
+          <p class="text-white/50 max-w-md">
+            Размещаем рекламу там, где студенты проводят большую часть своего дня.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5">
+
+          <div class="glass rounded-3xl overflow-hidden group">
+            <div class="h-64 bg-gradient-to-br from-zinc-800 to-zinc-950 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-5xl font-bold">KBTU</div>
+                <div class="text-white/40 mt-2">LED MEDIA</div>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="text-xl font-semibold">КБТУ</div>
+              <p class="text-white/45 text-sm mt-2">
+                Историческая Ротонда
+              </p>
+
+              <div class="flex justify-between mt-6 text-sm">
+                <span class="text-white/40">Аудитория</span>
+                <span>12 000+</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="glass rounded-3xl overflow-hidden">
+            <div class="h-64 bg-gradient-to-br from-zinc-800 to-zinc-950 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-5xl font-bold">KazNU</div>
+                <div class="text-white/40 mt-2">LED MEDIA</div>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="text-xl font-semibold">КазНУ</div>
+              <p class="text-white/45 text-sm mt-2">
+                Кампус Казахского национального университета
+              </p>
+
+              <div class="flex justify-between mt-6 text-sm">
+                <span class="text-white/40">Аудитория</span>
+                <span>28 000+</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="glass rounded-3xl overflow-hidden">
+            <div class="h-64 bg-gradient-to-br from-zinc-800 to-zinc-950 flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-5xl font-bold">NARXOZ</div>
+                <div class="text-white/40 mt-2">LED MEDIA</div>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="text-xl font-semibold">Narxoz</div>
+              <p class="text-white/45 text-sm mt-2">
+                Университетский кампус
+              </p>
+
+              <div class="flex justify-between mt-6 text-sm">
+                <span class="text-white/40">Аудитория</span>
+                <span>9 800+</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- METRICS -->
+    <section id="audience" class="py-28 bg-white text-black">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="max-w-3xl">
+          <p class="text-xs uppercase tracking-[.3em] text-black/40">
+            Audience
+          </p>
+
+          <h2 class="text-4xl md:text-6xl font-bold mt-4">
+            Молодая аудитория.
+            <br>
+            Каждый день.
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-10 mt-20">
+
+          <div>
+            <div class="text-5xl md:text-6xl font-bold">85K+</div>
+            <p class="text-black/50 mt-3">студентов в сети кампусов</p>
+          </div>
+
+          <div>
+            <div class="text-5xl md:text-6xl font-bold">18–24</div>
+            <p class="text-black/50 mt-3">основной возраст аудитории</p>
+          </div>
+
+          <div>
+            <div class="text-5xl md:text-6xl font-bold">70%</div>
+            <p class="text-black/50 mt-3">ежедневно находятся в кампусе</p>
+          </div>
+
+          <div>
+            <div class="text-5xl md:text-6xl font-bold">4.2M</div>
+            <p class="text-black/50 mt-3">примерных контактов в месяц</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="py-28 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="max-w-3xl">
+          <p class="text-xs uppercase tracking-[.3em] text-white/40">
+            How it works
+          </p>
+
+          <h2 class="text-4xl md:text-6xl font-bold mt-4">
+            Запуск за четыре шага.
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-5 mt-16">
+
+          <div class="glass rounded-3xl p-7">
+            <div class="text-white/30 text-sm">01</div>
+            <h3 class="text-xl font-semibold mt-12">Выбираете кампус</h3>
+            <p class="text-white/45 text-sm mt-4 leading-relaxed">
+              Выберите университеты, в которых хотите показать рекламу.
+            </p>
+          </div>
+
+          <div class="glass rounded-3xl p-7">
+            <div class="text-white/30 text-sm">02</div>
+            <h3 class="text-xl font-semibold mt-12">Настраиваете кампанию</h3>
+            <p class="text-white/45 text-sm mt-4 leading-relaxed">
+              Укажите количество экранов и длительность размещения.
+            </p>
+          </div>
+
+          <div class="glass rounded-3xl p-7">
+            <div class="text-white/30 text-sm">03</div>
+            <h3 class="text-xl font-semibold mt-12">Отправляете заявку</h3>
+            <p class="text-white/45 text-sm mt-4 leading-relaxed">
+              Мы связываемся с вами и подтверждаем детали кампании.
+            </p>
+          </div>
+
+          <div class="glass rounded-3xl p-7">
+            <div class="text-white/30 text-sm">04</div>
+            <h3 class="text-xl font-semibold mt-12">Реклама выходит</h3>
+            <p class="text-white/45 text-sm mt-4 leading-relaxed">
+              Ваш креатив появляется на выбранных LED-экранах.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- BRANDS -->
+    <section id="brands" class="py-28 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+
+          <div>
+            <p class="text-xs uppercase tracking-[.3em] text-white/40">
+              For brands
+            </p>
+
+            <h2 class="text-4xl md:text-6xl font-bold mt-4">
+              Идеально для брендов, которые понимают Gen Z.
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+
+            <div class="glass rounded-3xl p-7">
+              <div class="text-2xl">BEAUTY</div>
+              <p class="text-white/40 text-sm mt-3">
+                Косметика и уход
+              </p>
+            </div>
+
+            <div class="glass rounded-3xl p-7">
+              <div class="text-2xl">FASHION</div>
+              <p class="text-white/40 text-sm mt-3">
+                Одежда и аксессуары
+              </p>
+            </div>
+
+            <div class="glass rounded-3xl p-7">
+              <div class="text-2xl">FOOD</div>
+              <p class="text-white/40 text-sm mt-3">
+                Еда и напитки
+              </p>
+            </div>
+
+            <div class="glass rounded-3xl p-7">
+              <div class="text-2xl">LIFESTYLE</div>
+              <p class="text-white/40 text-sm mt-3">
+                Сервисы и развлечения
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CALCULATOR -->
+    <section id="calculator" class="py-28 bg-[#0a0a0a] border-y border-white/10">
+
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="max-w-3xl">
+          <p class="text-xs uppercase tracking-[.3em] text-white/40">
+            Calculator
+          </p>
+
+          <h2 class="text-4xl md:text-6xl font-bold mt-4">
+            Рассчитайте кампанию.
+          </h2>
+
+          <p class="text-white/45 mt-6">
+            Выберите локации, количество экранов и длительность.
+          </p>
+        </div>
+
+
+        <div class="grid lg:grid-cols-2 gap-8 mt-16">
+
+          <!-- LEFT -->
+          <div class="glass rounded-3xl p-7 md:p-9">
+
+            <div>
+              <p class="text-sm text-white/45 mb-4">
+                Университеты
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+
+                <button
+                  class="uni-chip active border border-white/15 rounded-full px-5 py-3 text-sm transition"
+                  data-price="180000"
+                  data-reach="12000"
+                  data-name="KBTU">
+                  KBTU
+                </button>
+
+                <button
+                  class="uni-chip active border border-white/15 rounded-full px-5 py-3 text-sm transition"
+                  data-price="160000"
+                  data-reach="28000"
+                  data-name="KazNU">
+                  KazNU
+                </button>
+
+                <button
+                  class="uni-chip active border border-white/15 rounded-full px-5 py-3 text-sm transition"
+                  data-price="142000"
+                  data-reach="9800"
+                  data-name="Narxoz">
+                  Narxoz
+                </button>
+
+                <button
+                  class="uni-chip border border-white/15 rounded-full px-5 py-3 text-sm transition"
+                  data-price="120000"
+                  data-reach="7000"
+                  data-name="SDU">
+                  SDU
+                </button>
+
+                <button
+                  class="uni-chip border border-white/15 rounded-full px-5 py-3 text-sm transition"
+                  data-price="110000"
+                  data-reach="6500"
+                  data-name="AlmaU">
+                  AlmaU
+                </button>
+
+              </div>
+            </div>
+
+
+            <div class="mt-10">
+
+              <p class="text-sm text-white/45 mb-4">
+                Количество экранов
+              </p>
+
+              <div class="flex items-center gap-4">
+
+                <button
+                  id="minus-screen"
+                  class="counter-button w-12 h-12 rounded-full border border-white/15 text-xl transition">
+                  −
+                </button>
+
+                <div
+                  id="screen-count"
+                  class="text-3xl font-semibold min-w-[50px] text-center">
+                  3
+                </div>
+
+                <button
+                  id="plus-screen"
+                  class="counter-button w-12 h-12 rounded-full border border-white/15 text-xl transition">
+                  +
+                </button>
+
+              </div>
+            </div>
+
+
+            <div class="mt-10">
+
+              <p class="text-sm text-white/45 mb-4">
+                Длительность
+              </p>
+
+              <div class="grid grid-cols-3 gap-3">
+
+                <button
+                  class="duration-btn active border border-white/15 rounded-2xl py-4 text-sm transition"
+                  data-weeks="1"
+                  data-discount="0">
+                  1 неделя
+                </button>
+
+                <button
+                  class="duration-btn border border-white/15 rounded-2xl py-4 text-sm transition"
+                  data-weeks="2"
+                  data-discount="0.05">
+                  2 недели
+                </button>
+
+                <button
+                  class="duration-btn border border-white/15 rounded-2xl py-4 text-sm transition"
+                  data-weeks="4"
+                  data-discount="0.12">
+                  1 месяц
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- RIGHT -->
+          <div class="bg-white text-black rounded-3xl p-7 md:p-9 flex flex-col justify-between">
+
+            <div>
+
+              <p class="text-black/40 text-sm">
+                Предварительный расчёт
+              </p>
+
+              <div class="mt-10">
+
+                <p class="text-black/45 text-sm">
+                  Ориентировочный охват
+                </p>
+
+                <div
+                  id="calc-reach"
+                  class="text-5xl md:text-6xl font-bold mt-2">
+                  50 300+
+                </div>
+
+              </div>
+
+
+              <div class="mt-10">
+
+                <p class="text-black/45 text-sm">
+                  Показов
+                </p>
+
+                <div
+                  id="calc-plays"
+                  class="text-3xl font-bold mt-2">
+                  5 040
+                </div>
+
+              </div>
+
+
+              <div class="mt-10">
+
+                <p class="text-black/45 text-sm">
+                  Стоимость
+                </p>
+
+                <div
+                  id="calc-price"
+                  class="text-5xl md:text-6xl font-bold mt-2">
+                  482 000 ₸
+                </div>
+
+              </div>
+
+              <p class="text-xs text-black/40 mt-6">
+                * Расчёт является предварительным. Финальная стоимость зависит от доступности экранов.
+              </p>
+
+            </div>
+
+
+            <button
+              id="book-package"
+              class="open-modal mt-10 bg-black text-white rounded-full py-4 font-semibold hover:bg-black/80 transition">
+              Забронировать этот пакет
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FINAL CTA -->
+    <section class="py-32">
+      <div class="max-w-5xl mx-auto px-5 text-center">
+
+        <p class="text-xs uppercase tracking-[.3em] text-white/40">
+          Ready?
+        </p>
+
+        <h2 class="text-5xl md:text-7xl font-bold mt-5 tracking-tight">
+          Покажите свой бренд
+          <span class="gradient-text">там, где есть Gen Z.</span>
+        </h2>
+
+        <p class="text-white/45 max-w-xl mx-auto mt-7">
+          Оставьте заявку, и мы подберём оптимальные локации и формат размещения.
+        </p>
+
+        <button
+          class="open-modal mt-10 bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-white/85 transition">
+          Начать кампанию
+        </button>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-12">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+      <div class="flex flex-col md:flex-row justify-between gap-8">
+
+        <div>
+          <div class="font-bold text-xl">
+            LUMEN <span class="text-white/40">ALA</span>
+          </div>
+
+          <p class="text-white/35 text-sm mt-3">
+            Digital Out Of Home · Almaty
+          </p>
+        </div>
+
+        <div class="text-sm text-white/40">
+          © 2026 LUMEN ALA
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MODAL -->
+  <div
+    id="campaign-modal"
+    class="modal-hidden fixed inset-0 z-50 items-center justify-center p-4">
+
+    <div
+      id="modal-backdrop"
+      class="absolute inset-0 bg-black/80 backdrop-blur-md">
+    </div>
+
+    <div class="relative w-full max-w-xl max-h-[90vh] overflow-y-auto bg-[#111] border border-white/10 rounded-3xl p-6 md:p-8 shadow-2xl">
+
+      <button
+        id="close-modal"
+        class="absolute right-5 top-5 w-10 h-10 rounded-full border border-white/10 text-white/60 hover:text-white hover:bg-white/10 transition text-xl">
+        ×
+      </button>
+
+
+      <div class="pr-12">
+
+        <p class="text-xs uppercase tracking-[.3em] text-white/40">
+          LUMEN ALA
+        </p>
+
+        <h2 class="text-3xl md:text-4xl font-bold mt-3">
+          Запустить кампанию
+        </h2>
+
+        <p class="text-white/45 text-sm mt-3">
+          Оставьте контакты. Заявка откроется в WhatsApp с уже собранными параметрами.
+        </p>
+
+      </div>
+
+
+      <form id="campaign-form" class="mt-8 space-y-4">
+
+        <div>
+          <label class="block text-sm text-white/50 mb-2">
+            Компания
+          </label>
+
+          <input
+            id="company"
+            type="text"
+            required
+            placeholder="Например, Beauty Brand"
+            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25">
+        </div>
+
+
+        <div>
+          <label class="block text-sm text-white/50 mb-2">
+            Ваше имя
+          </label>
+
+          <input
+            id="contact-name"
+            type="text"
+            required
+            placeholder="Имя"
+            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25">
+        </div>
+
+
+        <div>
+          <label class="block text-sm text-white/50 mb-2">
+            Телефон
+          </label>
+
+          <input
+            id="phone"
+            type="tel"
+            required
+            placeholder="+7 777 123 45 67"
+            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25">
+        </div>
+
+
+        <div>
+          <label class="block text-sm text-white/50 mb-2">
+            Instagram
+          </label>
+
+          <input
+            id="instagram"
+            type="text"
+            placeholder="@yourbrand"
+            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25">
+        </div>
+
+
+        <div>
+          <label class="block text-sm text-white/50 mb-2">
+            Комментарий
+          </label>
+
+          <textarea
+            id="comment"
+            rows="3"
+            placeholder="Например: хотим запуститься с 20 сентября"
+            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25 resize-none"></textarea>
+        </div>
+
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+
+          <p class="text-xs uppercase tracking-wider text-white/30">
+            Ваша конфигурация
+          </p>
+
+          <div class="mt-4 space-y-2 text-sm">
+
+            <div class="flex justify-between gap-4">
+              <span class="text-white/40">Университеты</span>
+              <span id="modal-universities" class="text-right">
+                KBTU, KazNU, Narxoz
+              </span>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <span class="text-white/40">Экраны</span>
+              <span id="modal-screens">3</span>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <span class="text-white/40">Длительность</span>
+              <span id="modal-duration">1 неделя</span>
+            </div>
+
+            <div class="flex justify-between gap-4">
+              <span class="text-white/40">Стоимость</span>
+              <span id="modal-price">482 000 ₸</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="w-full bg-white text-black rounded-full py-4 font-semibold hover:bg-white/85 transition">
+          Отправить заявку в WhatsApp
+        </button>
+
+        <p class="text-xs text-white/25 text-center">
+          Нажимая кнопку, вы открываете WhatsApp для отправки заявки.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+
+  <script>
+
+    const WHATSAPP_NUMBER = "77273904800";
+
+    let activeScreens = 3;
+    let durationWeeks = 1;
+    let discountRate = 0;
+
+
+    const modal = document.getElementById("campaign-modal");
+    const closeModalButton = document.getElementById("close-modal");
+    const modalBackdrop = document.getElementById("modal-backdrop");
+
+    const screenCountElement = document.getElementById("screen-count");
+    const reachElement = document.getElementById("calc-reach");
+    const playsElement = document.getElementById("calc-plays");
+    const priceElement = document.getElementById("calc-price");
+
+    const modalUniversities = document.getElementById("modal-universities");
+    const modalScreens = document.getElementById("modal-screens");
+    const modalDuration = document.getElementById("modal-duration");
+    const modalPrice = document.getElementById("modal-price");
+
+
+    function getSelectedUniversities() {
+      return [...document.querySelectorAll(".uni-chip.active")]
+        .map(chip => chip.dataset.name);
+    }
+
+
+    function getDurationName() {
+      if (durationWeeks === 1) return "1 неделя";
+      if (durationWeeks === 2) return "2 недели";
+      return "1 месяц";
+    }
+
+
+    function calculate() {
+
+      const selected = [...document.querySelectorAll(".uni-chip.active")];
+
+      let totalBasePrice = 0;
+      let totalReach = 0;
+
+      selected.forEach(chip => {
+        totalBasePrice += Number(chip.dataset.price);
+        totalReach += Number(chip.dataset.reach);
+      });
+
+
+      const screenFactor = activeScreens / 3;
+
+      let subtotal = totalBasePrice * screenFactor * durationWeeks;
+
+      const discount = subtotal * discountRate;
+
+      const finalPrice = Math.round(subtotal - discount);
+
+      const scaledReach = Math.round(
+        totalReach * Math.min(1.8, 1 + activeScreens * 0.15)
+      );
+
+      const plays = Math.round(
+        activeScreens * durationWeeks * 1680
+      );
+
+
+      reachElement.textContent =
+        scaledReach.toLocaleString("ru-RU") + "+";
+
+      playsElement.textContent =
+        plays.toLocaleString("ru-RU");
+
+      priceElement.textContent =
+        finalPrice.toLocaleString("ru-RU") + " ₸";
+
+
+      screenCountElement.textContent = activeScreens;
+
+      return {
+        universities: getSelectedUniversities(),
+        screens: activeScreens,
+        duration: getDurationName(),
+        price: finalPrice,
+        reach: scaledReach,
+        plays: plays
+      };
+    }
+
+
+    document.querySelectorAll(".uni-chip").forEach(chip => {
+
+      chip.addEventListener("click", () => {
+
+        chip.classList.toggle("active");
+
+        const selected =
+          document.querySelectorAll(".uni-chip.active");
+
+        if (selected.length === 0) {
+          chip.classList.add("active");
+        }
+
+        calculate();
+
+      });
+
+    });
+
+
+    document.getElementById("plus-screen").addEventListener("click", () => {
+
+      if (activeScreens < 48) {
+        activeScreens++;
+        calculate();
+      }
+
+    });
+
+
+    document.getElementById("minus-screen").addEventListener("click", () => {
+
+      if (activeScreens > 1) {
+        activeScreens--;
+        calculate();
+      }
+
+    });
+
+
+    document.querySelectorAll(".duration-btn").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        document.querySelectorAll(".duration-btn")
+          .forEach(item => item.classList.remove("active"));
+
+        button.classList.add("active");
+
+        durationWeeks = Number(button.dataset.weeks);
+        discountRate = Number(button.dataset.discount);
+
+        calculate();
+
+      });
+
+    });
+
+
+    function openModal() {
+
+      const result = calculate();
+
+      modal.classList.remove("modal-hidden");
+      modal.classList.add("modal-visible");
+
+      document.body.style.overflow = "hidden";
+
+      modalUniversities.textContent =
+        result.universities.join(", ");
+
+      modalScreens.textContent =
+        result.screens;
+
+      modalDuration.textContent =
+        result.duration;
+
+      modalPrice.textContent =
+        result.price.toLocaleString("ru-RU") + " ₸";
+    }
+
+
+    function closeModal() {
+
+      modal.classList.remove("modal-visible");
+      modal.classList.add("modal-hidden");
+
+      document.body.style.overflow = "";
+
+    }
+
+
+    document.querySelectorAll(".open-modal").forEach(button => {
+
+      button.addEventListener("click", openModal);
+
+    });
+
+
+    closeModalButton.addEventListener("click", closeModal);
+
+    modalBackdrop.addEventListener("click", closeModal);
+
+
+    document.addEventListener("keydown", event => {
+
+      if (event.key === "Escape") {
+        closeModal();
+      }
+
+    });
+
+
+    document.getElementById("campaign-form").addEventListener("submit", event => {
+
+      event.preventDefault();
+
+      const result = calculate();
+
+      const company =
+        document.getElementById("company").value.trim();
+
+      const name =
+        document.getElementById("contact-name").value.trim();
+
+      const phone =
+        document.getElementById("phone").value.trim();
+
+      const instagram =
+        document.getElementById("instagram").value.trim();
+
+      const comment =
+        document.getElementById("comment").value.trim();
+
+
+      const message =
+`Здравствуйте! Хочу запустить рекламную кампанию на LED-экранах LUMEN ALA.
+
+Компания: ${company}
+Имя: ${name}
+Телефон: ${phone}
+Instagram: ${instagram || "не указан"}
+
+Университеты: ${result.universities.join(", ")}
+Количество экранов: ${result.screens}
+Длительность: ${result.duration}
+Ориентировочная стоимость: ${result.price.toLocaleString("ru-RU")} ₸
+Ориентировочный охват: ${result.reach.toLocaleString("ru-RU")}+
+Показов: ${result.plays.toLocaleString("ru-RU")}
+
+Комментарий:
+${comment || "нет"}
+
+Хочу узнать доступность экранов и условия размещения.`;
+
+      const whatsappURL =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        encodeURIComponent(message);
+
+      window.open(whatsappURL, "_blank");
+
+    });
+
+
+    calculate();
+
+  </script>
+
+</body>
+</html>
