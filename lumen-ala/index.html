@@ -1,1123 +1,549 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Regata.Asia — Реклама на LED-экранах в Алматы</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      background: #050505;
-      color: white;
-      font-family: 'Inter', sans-serif;
-    }
-
-    .glass {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      backdrop-filter: blur(18px);
-    }
-
-    .gradient-text {
-      background: linear-gradient(90deg, #ffffff, #a7a7a7);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-grid {
-      background-image:
-        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
-
-    .modal-hidden {
-      display: none;
-    }
-
-    .modal-visible {
-      display: flex;
-    }
-
-    .uni-chip.active,
-    .duration-btn.active {
-      background: white;
-      color: black;
-      border-color: white;
-    }
-
-    .counter-button:hover {
-      background: rgba(255,255,255,.12);
-    }
-
-    input,
-    textarea {
-      outline: none;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: rgba(255,255,255,.5);
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- HEADER -->
-  <header class="fixed top-0 left-0 right-0 z-40 border-b border-white/10 bg-black/75 backdrop-blur-xl">
+<html class="dark" lang="ru"><head><meta charset="utf-8"/><title>Regata.Asia — Ивенты и спонсорство в Алматы</title><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface":"#050505","primary-fixed":"#e4e2de","surface-dim":"#050505","background":"#050505","surface-bright":"#3a3939","error":"#ffb4ab","on-secondary-fixed":"#1c1c17","tertiary":"#ffffff","on-surface":"#e5e2e1","on-error-container":"#ffdad6","on-secondary-container":"#b8b5ad","inverse-surface":"#e5e2e1","tertiary-fixed-dim":"#ccc6ba","on-primary-container":"#646462","secondary":"#cac6bf","inverse-primary":"#5e5e5c","surface-variant":"#353534","on-tertiary-fixed":"#1e1b14","on-primary":"#30312e","tertiary-fixed":"#e8e2d6","on-tertiary-fixed-variant":"#4a473e","surface-container-high":"#2a2a2a","on-primary-fixed-variant":"#474744","primary":"#ffffff","on-secondary-fixed-variant":"#484741","surface-container-highest":"#353534","surface-container-low":"#1c1b1b","tertiary-container":"#e8e2d6","secondary-fixed-dim":"#cac6bf","secondary-fixed":"#e6e2da","outline-variant":"#454742","on-secondary":"#31302b","on-surface-variant":"#c6c7c0","surface-container-lowest":"#0e0e0e","inverse-on-surface":"#313030","error-container":"#93000a","surface-tint":"#c8c6c3","primary-container":"#e4e2de","surface-container":"#201f1f","on-error":"#690005","primary-fixed-dim":"#c8c6c3","on-tertiary-container":"#68645a","secondary-container":"#484741","outline":"#90918b","on-tertiary":"#333028","on-primary-fixed":"#1b1c1a","on-background":"#e5e2e1"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-sm":"0.75rem","space-4xl":"9rem","space-lg":"1.5rem","space-xs":"0.5rem","space-2xl":"4rem","gutter-desktop":"2.5rem","column-gap":"1.5rem","space-md":"1rem","space-3xl":"6rem","gutter-mobile":"1rem","space-2xs":"0.25rem"},"fontFamily":{"body-sm":["Inter","sans-serif"],"label-pill":["Inter","sans-serif"],"display-hero":["Inter","sans-serif"],"headline-lg":["Inter","sans-serif"],"caption":["Inter","sans-serif"],"display-hero-mobile":["Inter","sans-serif"],"body-lg":["Inter","sans-serif"],"label-caps":["Inter","sans-serif"],"headline-sm":["Inter","sans-serif"],"headline-md":["Inter","sans-serif"],"body-md":["Inter","sans-serif"],"headline-lg-mobile":["Inter","sans-serif"],"subheading-editorial":["Inter","sans-serif"]},"fontSize":{"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"label-pill":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"display-hero":["72px",{"lineHeight":"80px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-lg":["48px",{"lineHeight":"54px","letterSpacing":"-0.02em","fontWeight":"700"}],"caption":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"300"}],"display-hero-mobile":["44px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"300"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"600"}],"headline-sm":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"700"}],"headline-md":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"700"}],"subheading-editorial":["20px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"700"}]}}}}</script><meta content="web_standard" name="shell-type"/></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-40 border-b border-white/10 bg-black/75 backdrop-blur-xl">
     <div class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
 
-      <a href="#" class="font-bold text-xl tracking-tight">
+      <a href="index.html" class="font-bold text-xl tracking-tight">
         Regata<span class="text-white/50">.Asia</span>
       </a>
 
       <nav class="hidden lg:flex items-center gap-8 text-sm text-white/65">
-        <a href="#screens" class="hover:text-white transition">Экраны и локации</a>
-        <a href="#audience" class="hover:text-white transition">Аудитория</a>
-        <a href="#how" class="hover:text-white transition">Как это работает</a>
-        <a href="#brands" class="hover:text-white transition">Брендам</a>
-        <a href="#calculator" class="hover:text-white transition">Рассчитать</a>
-        <a href="events.html" class="hover:text-white transition">Ивенты</a>
+        <a href="index.html" class="text-white font-medium" aria-current="page">Ивенты</a>
+        <a href="led.html#screens" class="hover:text-white transition">Экраны и локации</a>
+        <a href="led.html#audience" class="hover:text-white transition">Аудитория</a>
+        <a href="led.html#how" class="hover:text-white transition">Как это работает</a>
+        <a href="led.html#brands" class="hover:text-white transition">Брендам</a>
+        <a href="led.html#calculator" class="hover:text-white transition">Рассчитать</a>
       </nav>
 
-      <button
-        class="open-modal bg-white text-black px-5 py-3 rounded-full text-sm font-semibold hover:bg-white/85 transition">
-        Запустить кампанию
-      </button>
+      <a href="led.html#calculator" class="bg-white text-black px-5 py-3 rounded-full text-sm font-semibold hover:bg-white/85 transition">Запустить кампанию</a>
     </div>
-  </header>
-
-  <!-- HERO -->
-  <main>
-
-    <section class="relative min-h-screen pt-32 pb-20 overflow-hidden hero-grid">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,.10),transparent_45%)]"></div>
-
-      <div class="relative max-w-7xl mx-auto px-5 lg:px-8">
-
-        <div class="max-w-4xl pt-16 lg:pt-24">
-
-          <div class="inline-flex items-center gap-2 border border-white/10 rounded-full px-4 py-2 text-xs text-white/60 mb-8">
-            <span class="w-2 h-2 bg-green-400 rounded-full"></span>
-            LED MEDIA · ALMATY
+  </header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- TOP EDITORIAL ACCENT BAR -->
+<section class="w-full px-gutter-desktop pt-space-xl pb-space-lg flex items-center justify-between border-b border-surface-container-high">
+<div class="flex items-center gap-space-sm font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">
+<span class="inline-block w-2 h-2 bg-primary"></span>
+<span>[ 01 / EVENTS &amp; STRATEGIC ALLIANCES ]</span>
+</div>
+<div class="hidden md:flex items-center gap-space-lg font-caption text-caption text-secondary">
+<span>ALMATY • CENTRAL ASIA</span>
+<span class="text-surface-container-highest">/</span>
+<span>SEASON 2025–2026</span>
+<span class="text-surface-container-highest">/</span>
+<span class="text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+        DOOH NETWORK LIVE
+      </span>
+</div>
+</section>
+<!-- HERO SECTION -->
+<section class="w-full px-gutter-desktop pt-space-2xl pb-space-3xl flex flex-col gap-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container-high border border-surface-container-highest self-start">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">Холдинг полного цикла • Спонсорские платформы</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-[56px] md:leading-[62px] text-primary tracking-tight max-w-4xl">
+          Создаем масштабные события и высокодоходные спонсорские интеграции
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light">
+          От концепции городских фестивалей, форумов и выставок до закрытых коммерческих коллабораций лидеров рынка с поколением Gen Z и премиальной аудиторией Казахстана.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-md">
+<a class="px-space-xl py-space-md bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded-none hover:bg-surface-container-lowest hover:text-primary transition-all duration-300 border border-primary" href="#partner-form">
+            Обсудить интеграцию
+          </a>
+</div>
+</div>
+<!-- Live Operations Card -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg border border-surface-container-high flex flex-col justify-between h-full gap-space-lg">
+<div class="flex items-center justify-between border-b border-surface-container-high pb-space-sm">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">ХОЛДИНГ ИНТЕГРАЦИЙ</span>
+<span class="font-caption text-caption text-primary">STATUS: CONFIRMED</span>
+</div>
+<div class="space-y-space-md">
+<div class="text-[38px] leading-tight font-headline-md text-primary tracking-tight">100%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Sold-out генеральных спонсорских пакетов сезонов 2023–2024 на фестивалях и саммитах Алматы.
           </div>
-
-          <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[.95]">
-            Охватите поколение
-            <span class="gradient-text">Gen Z</span>
-            там, где они учатся.
-          </h1>
-
-          <p class="mt-8 text-lg md:text-xl text-white/55 max-w-2xl leading-relaxed">
-            Размещайте рекламу на LED-экранах внутри крупнейших университетов Алматы
-            и будьте на виду у студентов каждый день.
+<div class="h-[1px] w-full bg-surface-container-high"></div>
+<div class="flex items-center justify-between text-secondary font-label-caps text-[10px]">
+<span>ОХВАТ СЕТИ Regata.Asia</span>
+<span class="text-primary font-mono">48× 4K SCREENS</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container text-secondary font-caption text-caption">
+          Индивидуальный расчет CPM и сквозной конверсии брендов до подписания договора.
+        </div>
+</div>
+</div>
+<!-- GRAND CONCERT / FESTIVAL BANNER (Full bleed hero showcase) -->
+<div class="relative w-full overflow-hidden border border-surface-container-high group">
+<div class="relative aspect-[16/8] md:aspect-[21/9] w-full bg-surface-container-lowest overflow-hidden">
+<img alt="Almaty massive open air music festival by Regata.Asia with vertical 4K stage towers and crowd" class="w-full h-full object-cover grayscale contrast-125 brightness-90 group-hover:scale-[1.01] transition-transform duration-700 ease-out" src="images/screen.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-90"></div>
+<div class="absolute inset-0 bg-radial from-transparent via-transparent to-surface/60"></div>
+</div>
+<!-- Overlaid Metrics Bar -->
+<div class="absolute bottom-0 left-0 right-0 p-space-md md:p-space-xl flex flex-col md:flex-row justify-between items-start md:items-end gap-space-md backdrop-blur-md bg-surface/60 border-t border-surface-container-high">
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase mb-1">МАСШТАБ ОФЛАЙН ЭКОСИСТЕМЫ</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight">ALMATY OPEN AIR ARENA 2025</span>
+</div>
+<div class="flex items-center gap-space-xl divide-x divide-surface-container-high">
+<div class="flex flex-col pr-space-md">
+<span class="font-headline-sm text-headline-sm text-primary font-mono">250,000+</span>
+<span class="font-caption text-caption text-secondary uppercase">участников ежегодно</span>
+</div>
+<div class="flex flex-col pl-space-md">
+<span class="font-headline-sm text-headline-sm text-primary font-mono">100%</span>
+<span class="font-caption text-caption text-secondary uppercase">Sold-Out спонсорских мест</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- KEY METRICS / STATS SECTION -->
+<section class="w-full px-gutter-desktop py-space-2xl bg-surface-container-lowest border-y border-surface-container-high">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-surface-container-high">
+<div class="py-space-lg sm:py-0 px-space-lg flex flex-col justify-between gap-space-md">
+<div class="font-label-caps text-[10px] text-secondary tracking-widest">[ METRIC // 01 ]</div>
+<div class="space-y-1">
+<div class="font-headline-lg text-[44px] leading-none text-primary font-mono font-normal">45+</div>
+<div class="font-body-md text-body-md text-primary font-medium">Собственных ивентов и фестивалей</div>
+<p class="font-caption text-caption text-secondary">Регулярные городские опен-эйры, академические форумы и технологические саммиты.</p>
+</div>
+</div>
+<div class="py-space-lg sm:py-0 px-space-lg flex flex-col justify-between gap-space-md">
+<div class="font-label-caps text-[10px] text-secondary tracking-widest">[ METRIC // 02 ]</div>
+<div class="space-y-1">
+<div class="font-headline-lg text-[44px] leading-none text-primary font-mono font-normal">₸1.8B+</div>
+<div class="font-body-md text-body-md text-primary font-medium">Сгенерированная ценность</div>
+<p class="font-caption text-caption text-secondary">Прямой коммерческий оборот и эквивалент рекламных контактов (PR Value) для партнеров.</p>
+</div>
+</div>
+<div class="py-space-lg sm:py-0 px-space-lg flex flex-col justify-between gap-space-md">
+<div class="font-label-caps text-[10px] text-secondary tracking-widest">[ METRIC // 03 ]</div>
+<div class="space-y-1">
+<div class="font-headline-lg text-[44px] leading-none text-primary font-mono font-normal">850K+</div>
+<div class="font-body-md text-body-md text-primary font-medium">Охват в офлайн и phygital</div>
+<p class="font-caption text-caption text-secondary">Сквозной контакт аудитории на локациях и в кампусной медиасети 4K экранов.</p>
+</div>
+</div>
+<div class="py-space-lg sm:py-0 px-space-lg flex flex-col justify-between gap-space-md">
+<div class="font-label-caps text-[10px] text-secondary tracking-widest">[ METRIC // 04 ]</div>
+<div class="space-y-1">
+<div class="font-headline-lg text-[44px] leading-none text-primary font-mono font-normal">94%</div>
+<div class="font-body-md text-body-md text-primary font-medium">Индекс Retention партнеров</div>
+<p class="font-caption text-caption text-secondary">Повторное продление контрактов топ-брендами на сезонные флагманские программы.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ / CORE FORMATS -->
+<section class="w-full px-gutter-desktop py-space-3xl flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-surface-container-high pb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-2">[ 02 / ФОРМАТЫ МЕРОПРИЯТИЙ ]</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          Архитектура масштабных событий
+        </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        Полный производственный цикл: букинг артистов и спикеров, сценография, согласование с акиматом, мультимедиа-инженерия и работа со спонсорами.
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-column-gap">
+<!-- Card 01 -->
+<div class="bg-surface-container-lowest border border-surface-container-high flex flex-col justify-between p-space-xl hover:border-primary/50 transition-colors duration-300">
+<div class="space-y-space-lg">
+<div class="flex items-center justify-between border-b border-surface-container-high pb-space-sm">
+<span class="font-mono text-primary font-bold">01 / OUTDOOR</span>
+<span class="font-label-caps text-[10px] text-secondary">15,000 – 50,000 ГОСТЕЙ</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-snug">
+            Музыкальные фестивали и опен-эйры
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">
+            Флагманские городские события под открытым небом. Монументальные сценические конструкции, главная сцена со светодиодными порталами 4K, брендированные фан-зоны и бесшовный DOOH стриминг.
           </p>
-
-          <div class="flex flex-col sm:flex-row gap-4 mt-10">
-            <button
-              class="open-modal bg-white text-black px-7 py-4 rounded-full font-semibold hover:bg-white/85 transition">
-              Запустить кампанию
-            </button>
-
-            <a
-              href="#screens"
-              class="border border-white/15 px-7 py-4 rounded-full font-semibold hover:bg-white/5 transition text-center">
-              Каталог локаций
-            </a>
-          </div>
-        </div>
-
-        <div class="mt-20 relative">
-          <div class="rounded-3xl overflow-hidden border border-white/10 bg-white/5">
-            <img
-              src="images/hero.png"
-              alt="LED screen"
-              class="w-full h-[300px] md:h-[500px] object-cover"
-              onerror="this.style.display='none'; this.parentElement.classList.add('bg-gradient-to-br','from-zinc-900','to-black')"
-            >
-
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
-
-            <div class="absolute bottom-6 left-6 md:bottom-10 md:left-10">
-              <p class="text-xs uppercase tracking-[.25em] text-white/50">
-                DIGITAL OUT OF HOME
-              </p>
-              <p class="text-2xl md:text-4xl font-semibold mt-2">
-                Your brand. Their everyday.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- SCREENS -->
-    <section id="screens" class="py-28 border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-5 lg:px-8">
-
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div>
-            <p class="text-xs uppercase tracking-[.3em] text-white/40">Our screens</p>
-            <h2 class="text-4xl md:text-6xl font-bold mt-4">
-              Экраны в кампусах.
-            </h2>
-          </div>
-
-          <p class="text-white/50 max-w-md">
-            Размещаем рекламу там, где студенты проводят большую часть своего дня.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-5">
-
-          <div class="glass rounded-3xl overflow-hidden group">
-            <div class="relative h-64 bg-gradient-to-br from-zinc-800 to-zinc-950 flex items-center justify-center overflow-hidden">
-              <img src="images/kbtu.png" alt="LED-экран в КБТУ" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
-              <div class="text-center">
-                <div class="text-5xl font-bold">KBTU</div>
-                <div class="text-white/40 mt-2">LED MEDIA</div>
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="text-xl font-semibold">КБТУ</div>
-              <p class="text-white/45 text-sm mt-2">
-                Историческая Ротонда
-              </p>
-
-              <div class="flex justify-between mt-6 text-sm">
-                <span class="text-white/40">Аудитория</span>
-                <span>12 000+</span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="glass rounded-3xl overflow-hidden">
-            <div class="relative h-64 bg-gradient-to-br from-zinc-800 to-zinc-950 flex items-center justify-center overflow-hidden">
-              <img src="images/kaznu.png" alt="LED-экран в КазНУ" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
-              <div class="text-center">
-                <div class="text-5xl font-bold">KazNU</div>
-                <div class="text-white/40 mt-2">LED MEDIA</div>
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="text-xl font-semibold">КазНУ</div>
-              <p class="text-white/45 text-sm mt-2">
-                Кампус Казахского национального университета
-              </p>
-
-              <div class="flex justify-between mt-6 text-sm">
-                <span class="text-white/40">Аудитория</span>
-                <span>28 000+</span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="glass rounded-3xl overflow-hidden">
-            <div class="relative h-64 bg-gradient-to-br from-zinc-800 to-zinc-950 flex items-center justify-center overflow-hidden">
-              <img src="images/narxoz.png" alt="LED-экран в Narxoz" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
-              <div class="text-center">
-                <div class="text-5xl font-bold">NARXOZ</div>
-                <div class="text-white/40 mt-2">LED MEDIA</div>
-              </div>
-            </div>
-
-            <div class="p-6">
-              <div class="text-xl font-semibold">Narxoz</div>
-              <p class="text-white/45 text-sm mt-2">
-                Университетский кампус
-              </p>
-
-              <div class="flex justify-between mt-6 text-sm">
-                <span class="text-white/40">Аудитория</span>
-                <span>9 800+</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- METRICS -->
-    <section id="audience" class="py-28 bg-white text-black">
-      <div class="max-w-7xl mx-auto px-5 lg:px-8">
-
-        <div class="max-w-3xl">
-          <p class="text-xs uppercase tracking-[.3em] text-black/40">
-            Audience
-          </p>
-
-          <h2 class="text-4xl md:text-6xl font-bold mt-4">
-            Молодая аудитория.
-            <br>
-            Каждый день.
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-4 gap-10 mt-20">
-
-          <div>
-            <div class="text-5xl md:text-6xl font-bold">85K+</div>
-            <p class="text-black/50 mt-3">студентов в сети кампусов</p>
-          </div>
-
-          <div>
-            <div class="text-5xl md:text-6xl font-bold">18–24</div>
-            <p class="text-black/50 mt-3">основной возраст аудитории</p>
-          </div>
-
-          <div>
-            <div class="text-5xl md:text-6xl font-bold">70%</div>
-            <p class="text-black/50 mt-3">ежедневно находятся в кампусе</p>
-          </div>
-
-          <div>
-            <div class="text-5xl md:text-6xl font-bold">4.2M</div>
-            <p class="text-black/50 mt-3">примерных контактов в месяц</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- HOW IT WORKS -->
-    <section id="how" class="py-28 border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-5 lg:px-8">
-
-        <div class="max-w-3xl">
-          <p class="text-xs uppercase tracking-[.3em] text-white/40">
-            How it works
-          </p>
-
-          <h2 class="text-4xl md:text-6xl font-bold mt-4">
-            Запуск за четыре шага.
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-4 gap-5 mt-16">
-
-          <div class="glass rounded-3xl p-7">
-            <div class="text-white/30 text-sm">01</div>
-            <h3 class="text-xl font-semibold mt-12">Выбираете кампус</h3>
-            <p class="text-white/45 text-sm mt-4 leading-relaxed">
-              Выберите университеты, в которых хотите показать рекламу.
-            </p>
-          </div>
-
-          <div class="glass rounded-3xl p-7">
-            <div class="text-white/30 text-sm">02</div>
-            <h3 class="text-xl font-semibold mt-12">Настраиваете кампанию</h3>
-            <p class="text-white/45 text-sm mt-4 leading-relaxed">
-              Укажите количество экранов и длительность размещения.
-            </p>
-          </div>
-
-          <div class="glass rounded-3xl p-7">
-            <div class="text-white/30 text-sm">03</div>
-            <h3 class="text-xl font-semibold mt-12">Отправляете заявку</h3>
-            <p class="text-white/45 text-sm mt-4 leading-relaxed">
-              Мы связываемся с вами и подтверждаем детали кампании.
-            </p>
-          </div>
-
-          <div class="glass rounded-3xl p-7">
-            <div class="text-white/30 text-sm">04</div>
-            <h3 class="text-xl font-semibold mt-12">Реклама выходит</h3>
-            <p class="text-white/45 text-sm mt-4 leading-relaxed">
-              Ваш креатив появляется на выбранных LED-экранах.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- BRANDS -->
-    <section id="brands" class="py-28 border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-5 lg:px-8">
-
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-
-          <div>
-            <p class="text-xs uppercase tracking-[.3em] text-white/40">
-              For brands
-            </p>
-
-            <h2 class="text-4xl md:text-6xl font-bold mt-4">
-              Идеально для брендов, которые понимают Gen Z.
-            </h2>
-          </div>
-
-          <div class="grid grid-cols-2 gap-4">
-
-            <div class="glass rounded-3xl p-7">
-              <div class="text-2xl">BEAUTY</div>
-              <p class="text-white/40 text-sm mt-3">
-                Косметика и уход
-              </p>
-            </div>
-
-            <div class="glass rounded-3xl p-7">
-              <div class="text-2xl">FASHION</div>
-              <p class="text-white/40 text-sm mt-3">
-                Одежда и аксессуары
-              </p>
-            </div>
-
-            <div class="glass rounded-3xl p-7">
-              <div class="text-2xl">FOOD</div>
-              <p class="text-white/40 text-sm mt-3">
-                Еда и напитки
-              </p>
-            </div>
-
-            <div class="glass rounded-3xl p-7">
-              <div class="text-2xl">LIFESTYLE</div>
-              <p class="text-white/40 text-sm mt-3">
-                Сервисы и развлечения
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- CALCULATOR -->
-    <section id="calculator" class="py-28 bg-[#0a0a0a] border-y border-white/10">
-
-      <div class="max-w-7xl mx-auto px-5 lg:px-8">
-
-        <div class="max-w-3xl">
-          <p class="text-xs uppercase tracking-[.3em] text-white/40">
-            Calculator
-          </p>
-
-          <h2 class="text-4xl md:text-6xl font-bold mt-4">
-            Рассчитайте кампанию.
-          </h2>
-
-          <p class="text-white/45 mt-6">
-            Выберите локации, количество экранов и длительность.
-          </p>
-        </div>
-
-
-        <div class="grid lg:grid-cols-2 gap-8 mt-16">
-
-          <!-- LEFT -->
-          <div class="glass rounded-3xl p-7 md:p-9">
-
-            <div>
-              <p class="text-sm text-white/45 mb-4">
-                Университеты
-              </p>
-
-              <div class="flex flex-wrap gap-3">
-
-                <button
-                  class="uni-chip active border border-white/15 rounded-full px-5 py-3 text-sm transition"
-                  data-price="180000"
-                  data-reach="12000"
-                  data-name="KBTU">
-                  KBTU
-                </button>
-
-                <button
-                  class="uni-chip active border border-white/15 rounded-full px-5 py-3 text-sm transition"
-                  data-price="160000"
-                  data-reach="28000"
-                  data-name="KazNU">
-                  KazNU
-                </button>
-
-                <button
-                  class="uni-chip active border border-white/15 rounded-full px-5 py-3 text-sm transition"
-                  data-price="142000"
-                  data-reach="9800"
-                  data-name="Narxoz">
-                  Narxoz
-                </button>
-
-                <button
-                  class="uni-chip border border-white/15 rounded-full px-5 py-3 text-sm transition"
-                  data-price="120000"
-                  data-reach="7000"
-                  data-name="SDU">
-                  SDU
-                </button>
-
-                <button
-                  class="uni-chip border border-white/15 rounded-full px-5 py-3 text-sm transition"
-                  data-price="110000"
-                  data-reach="6500"
-                  data-name="AlmaU">
-                  AlmaU
-                </button>
-
-              </div>
-            </div>
-
-
-            <div class="mt-10">
-
-              <p class="text-sm text-white/45 mb-4">
-                Количество экранов
-              </p>
-
-              <div class="flex items-center gap-4">
-
-                <button
-                  id="minus-screen"
-                  class="counter-button w-12 h-12 rounded-full border border-white/15 text-xl transition">
-                  −
-                </button>
-
-                <div
-                  id="screen-count"
-                  class="text-3xl font-semibold min-w-[50px] text-center">
-                  3
-                </div>
-
-                <button
-                  id="plus-screen"
-                  class="counter-button w-12 h-12 rounded-full border border-white/15 text-xl transition">
-                  +
-                </button>
-
-              </div>
-            </div>
-
-
-            <div class="mt-10">
-
-              <p class="text-sm text-white/45 mb-4">
-                Длительность
-              </p>
-
-              <div class="grid grid-cols-3 gap-3">
-
-                <button
-                  class="duration-btn active border border-white/15 rounded-2xl py-4 text-sm transition"
-                  data-weeks="1"
-                  data-discount="0">
-                  1 неделя
-                </button>
-
-                <button
-                  class="duration-btn border border-white/15 rounded-2xl py-4 text-sm transition"
-                  data-weeks="2"
-                  data-discount="0.05">
-                  2 недели
-                </button>
-
-                <button
-                  class="duration-btn border border-white/15 rounded-2xl py-4 text-sm transition"
-                  data-weeks="4"
-                  data-discount="0.12">
-                  1 месяц
-                </button>
-
-              </div>
-            </div>
-
-          </div>
-
-
-          <!-- RIGHT -->
-          <div class="bg-white text-black rounded-3xl p-7 md:p-9 flex flex-col justify-between">
-
-            <div>
-
-              <p class="text-black/40 text-sm">
-                Предварительный расчёт
-              </p>
-
-              <div class="mt-10">
-
-                <p class="text-black/45 text-sm">
-                  Ориентировочный охват
-                </p>
-
-                <div
-                  id="calc-reach"
-                  class="text-5xl md:text-6xl font-bold mt-2">
-                  50 300+
-                </div>
-
-              </div>
-
-
-              <div class="mt-10">
-
-                <p class="text-black/45 text-sm">
-                  Показов
-                </p>
-
-                <div
-                  id="calc-plays"
-                  class="text-3xl font-bold mt-2">
-                  5 040
-                </div>
-
-              </div>
-
-
-              <div class="mt-10">
-
-                <p class="text-black/45 text-sm">
-                  Стоимость
-                </p>
-
-                <div
-                  id="calc-price"
-                  class="text-5xl md:text-6xl font-bold mt-2">
-                  482 000 ₸
-                </div>
-
-              </div>
-
-              <p class="text-xs text-black/40 mt-6">
-                * Расчёт является предварительным. Финальная стоимость зависит от доступности экранов.
-              </p>
-
-            </div>
-
-
-            <button
-              id="book-package"
-              class="open-modal mt-10 bg-black text-white rounded-full py-4 font-semibold hover:bg-black/80 transition">
-              Забронировать этот пакет
-            </button>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- EVENTS TEASER -->
-    <section id="events" class="py-28 border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-5 lg:px-8">
-        <a href="events.html" class="glass rounded-3xl p-8 md:p-12 flex flex-col md:flex-row md:items-center justify-between gap-8 hover:bg-white/[.07] transition group">
-          <div class="max-w-2xl">
-            <p class="text-xs uppercase tracking-[.3em] text-white/40">Events &amp; Partnerships</p>
-            <h2 class="text-4xl md:text-5xl font-bold mt-4">Ивенты и спонсорство.</h2>
-            <p class="text-white/50 mt-5 leading-relaxed">
-              Фестивали, форумы и pop-up мероприятия с интеграцией вашего бренда.
-            </p>
-          </div>
-          <span class="shrink-0 inline-flex items-center justify-center gap-3 bg-white text-black px-7 py-4 rounded-full font-semibold group-hover:bg-white/85 transition">
-            Смотреть ивенты <span aria-hidden="true">→</span>
+</div>
+<div class="pt-space-xl border-t border-surface-container-high mt-space-xl">
+<ul class="space-y-space-xs font-caption text-caption text-secondary">
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+              Эксклюзивные зоны активации брендов
+            </li>
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+              Многотысячный молодежный трафик Gen Z
+            </li>
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+              Прямые телетрансляции и стримы в соцсетях
+            </li>
+</ul>
+</div>
+</div>
+<!-- Card 02 (With Tech Image) -->
+<div class="bg-surface-container-lowest border border-surface-container-high flex flex-col justify-between overflow-hidden group hover:border-primary/50 transition-colors duration-300">
+<div class="aspect-[16/10] w-full bg-surface-container overflow-hidden relative">
+<img alt="Business tech exhibition hall with professional stands and crowds networking at Regata.Asia summit" class="w-full h-full object-cover grayscale contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-700" src="images/events-expo.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 px-2 py-1 bg-surface/90 text-primary font-mono text-[10px] uppercase border border-surface-container-high">
+            02 / B2B &amp; TECH
           </span>
-        </a>
-      </div>
-    </section>
-
-
-    <!-- FINAL CTA -->
-    <section class="py-32">
-      <div class="max-w-5xl mx-auto px-5 text-center">
-
-        <p class="text-xs uppercase tracking-[.3em] text-white/40">
-          Ready?
-        </p>
-
-        <h2 class="text-5xl md:text-7xl font-bold mt-5 tracking-tight">
-          Покажите свой бренд
-          <span class="gradient-text">там, где есть Gen Z.</span>
-        </h2>
-
-        <p class="text-white/45 max-w-xl mx-auto mt-7">
-          Оставьте заявку, и мы подберём оптимальные локации и формат размещения.
-        </p>
-
-        <button
-          class="open-modal mt-10 bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-white/85 transition">
-          Начать кампанию
-        </button>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer class="border-t border-white/10 py-12">
-
-    <div class="max-w-7xl mx-auto px-5 lg:px-8">
-
-      <div class="flex flex-col md:flex-row justify-between gap-8">
-
-        <div>
-          <div class="font-bold text-xl">
-            Regata<span class="text-white/40">.Asia</span>
+</div>
+<div class="p-space-xl flex flex-col justify-between flex-1">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between border-b border-surface-container-high pb-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary uppercase">Деловые форумы и Tech Expo</span>
+<span class="font-label-caps text-[10px] text-secondary">3,000 – 12,000 ЛИДЕРОВ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">
+              Высокоинтенсивный нетворкинг топ-менеджеров, инвесторов, IT-предпринимателей и студентов. Интерактивные экспо-павильоны, аллея инноваций, демонстрация технологических решений.
+            </p>
+</div>
+<div class="pt-space-lg border-t border-surface-container-high mt-space-lg">
+<ul class="space-y-space-xs font-caption text-caption text-secondary">
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+                Lead generation стенды и B2B матчинг
+              </li>
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+                Интерактивные медиа-экраны и сессии питчей
+              </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Card 03 -->
+<div class="bg-surface-container-lowest border border-surface-container-high flex flex-col justify-between p-space-xl hover:border-primary/50 transition-colors duration-300">
+<div class="space-y-space-lg">
+<div class="flex items-center justify-between border-b border-surface-container-high pb-space-sm">
+<span class="font-mono text-primary font-bold">03 / PRIVATE &amp; POP-UP</span>
+<span class="font-label-caps text-[10px] text-secondary">200 – 1,500 VIP</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary leading-snug">
+            Закрытые pop-up ивенты и премьеры
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">
+            Камерные селективные презентации для трендсеттеров, премиальных клиентов, fashion &amp; beauty брендов и селебрити. Атмосфера сдержанной роскоши, закрытый гостевой список и органический UGC-охват.
+          </p>
+</div>
+<div class="pt-space-xl border-t border-surface-container-high mt-space-xl">
+<ul class="space-y-space-xs font-caption text-caption text-secondary">
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+              VIP Lounge и индивидуальный консьерж
+            </li>
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+              Архитектурный свет и арт-сценография
+            </li>
+<li class="flex items-center gap-2">
+<span class="w-1 h-1 bg-primary"></span>
+              Прямой контакт с топ-1% потребителей
+            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- СПОНСОРСКИЕ ИНТЕГРАЦИИ И МЕХАНИКИ -->
+<section class="w-full px-gutter-desktop py-space-3xl bg-surface-container-lowest border-y border-surface-container-high">
+<div class="max-w-6xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-2">[ 03 / СПОНСОРСТВО &amp; КОЛЛАБОРАЦИИ ]</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+            Механики интеграции брендов
+          </h2>
+</div>
+<span class="font-mono text-secondary text-body-sm">[ FULL-FUNNEL CONVERSIONS ]</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Mechanic Item 01 -->
+<div class="p-space-xl bg-surface border border-surface-container-high flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono text-secondary text-caption">[ 01 / NAMING ]</span>
+<span class="material-symbols-outlined text-primary text-[20px]">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Генеральное спонсорство &amp; Naming</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+              Интеграция бренда в титульное название фестиваля или главной сцены («Бренд Stage»). Присутствие во всех рекламных роликах, наружной рекламе, билетах и digital-кампаниях с гарантированным охватом более 3.5 млн контактов.
+            </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container-high text-secondary font-caption text-caption">
+            Эксклюзив: 1 партнер на категорию (Telecom, Fintech, FMCG).
           </div>
-
-          <p class="text-white/35 text-sm mt-3">
-            Digital Out Of Home · Almaty
-          </p>
-        </div>
-
-        <div class="text-sm text-white/50 md:text-right space-y-2">
-          <a href="mailto:partners@regata.asia" class="block hover:text-white transition">partners@regata.asia</a>
-          <a href="https://wa.me/77772098007" target="_blank" class="block hover:text-white transition">+7 777 209 80 07 · WhatsApp</a>
-          <div class="text-white/30 pt-2">© 2026 Regata.Asia</div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </footer>
-
-
-  <!-- MODAL -->
-  <div
-    id="campaign-modal"
-    class="modal-hidden fixed inset-0 z-50 items-center justify-center p-4">
-
-    <div
-      id="modal-backdrop"
-      class="absolute inset-0 bg-black/80 backdrop-blur-md">
-    </div>
-
-    <div class="relative w-full max-w-xl max-h-[90vh] overflow-y-auto bg-[#111] border border-white/10 rounded-3xl p-6 md:p-8 shadow-2xl">
-
-      <button
-        id="close-modal"
-        class="absolute right-5 top-5 w-10 h-10 rounded-full border border-white/10 text-white/60 hover:text-white hover:bg-white/10 transition text-xl">
-        ×
-      </button>
-
-
-      <div class="pr-12">
-
-        <p class="text-xs uppercase tracking-[.3em] text-white/40">
-          Regata.Asia
-        </p>
-
-        <h2 class="text-3xl md:text-4xl font-bold mt-3">
-          Запустить кампанию
+</div>
+<!-- Mechanic Item 02 -->
+<div class="p-space-xl bg-surface border border-surface-container-high flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono text-secondary text-caption">[ 02 / PHYGITAL ZONES ]</span>
+<span class="material-symbols-outlined text-primary text-[20px]">devices</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Phygital &amp; Интерактивные зоны</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+              Строительство кастомных брендированных павильонов до 300 м²: интерактивные LED-экраны, VR/AR квесты, мобильная регистрация, геймифицированная выдача мерча и мгновенная конверсия в скачивание приложений.
+            </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container-high text-secondary font-caption text-caption">
+            Сбор до 25 000 верифицированных лидов за один уикенд.
+          </div>
+</div>
+<!-- Mechanic Item 03 -->
+<div class="p-space-xl bg-surface border border-surface-container-high flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono text-secondary text-caption">[ 03 / RETAIL &amp; FOOD ]</span>
+<span class="material-symbols-outlined text-primary text-[20px]">local_bar</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Product Placement &amp; Retail</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+              Монопольные права на продажи напитков, снеков и фирменной продукции. Брендированные фуд-траки, коктейльные бары, бьюти-зоны с экспресс-стайлингом и фотогеничные чиллаут-террасы.
+            </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container-high text-secondary font-caption text-caption">
+            100% покрытие платежей через эквайринг партнера.
+          </div>
+</div>
+<!-- Mechanic Item 04 -->
+<div class="p-space-xl bg-surface border border-surface-container-high flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono text-secondary text-caption">[ 04 / DOOH NETWORK ]</span>
+<span class="material-symbols-outlined text-primary text-[20px]">campaign</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Omnichannel Digital Amplification</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+              Сквозная синергия с университетской медиасетью Regata.Asia. Ротация промо-кампании спонсора на 48 экранах 4K в топ-вузах Алматы за 3 недели до и 2 недели после события для закрепления конверсии.
+            </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container-high text-secondary font-caption text-caption">
+            Ежедневный контакт с 120 000+ будущих лидеров мнений.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- РЕАЛИЗОВАННЫЕ КЕЙСЫ (Case Studies) -->
+<section id="cases" class="w-full px-gutter-desktop py-space-3xl flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-surface-container-high pb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-2">[ 04 / PROVEN IMPACT ]</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">
+          Реализованные кейсы и метрики
         </h2>
-
-        <p class="text-white/45 text-sm mt-3">
-          Оставьте контакты. Заявка откроется в WhatsApp с уже собранными параметрами.
-        </p>
-
+</div>
+<div class="font-caption text-caption text-secondary">
+        ДАННЫЕ АУДИТА 2024 ГОДА • НЕЗАВИСИМЫЙ МОНИТОРИНГ
       </div>
-
-
-      <form id="campaign-form" class="mt-8 space-y-4">
-
-        <div>
-          <label class="block text-sm text-white/50 mb-2">
-            Компания
-          </label>
-
-          <input
-            id="company"
-            type="text"
-            required
-            placeholder="Например, Beauty Brand"
-            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25">
-        </div>
-
-
-        <div>
-          <label class="block text-sm text-white/50 mb-2">
-            Ваше имя
-          </label>
-
-          <input
-            id="contact-name"
-            type="text"
-            required
-            placeholder="Имя"
-            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25">
-        </div>
-
-
-        <div>
-          <label class="block text-sm text-white/50 mb-2">
-            Телефон
-          </label>
-
-          <input
-            id="phone"
-            type="tel"
-            required
-            placeholder="+7 777 123 45 67"
-            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25">
-        </div>
-
-
-        <div>
-          <label class="block text-sm text-white/50 mb-2">
-            Instagram
-          </label>
-
-          <input
-            id="instagram"
-            type="text"
-            placeholder="@yourbrand"
-            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25">
-        </div>
-
-
-        <div>
-          <label class="block text-sm text-white/50 mb-2">
-            Комментарий
-          </label>
-
-          <textarea
-            id="comment"
-            rows="3"
-            placeholder="Например: хотим запуститься с 20 сентября"
-            class="w-full bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white placeholder:text-white/25 resize-none"></textarea>
-        </div>
-
-
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-
-          <p class="text-xs uppercase tracking-wider text-white/30">
-            Ваша конфигурация
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-column-gap">
+<!-- Case 01 -->
+<div class="bg-surface-container border border-surface-container-high p-space-xl flex flex-col justify-between relative">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between font-mono text-caption text-secondary pb-space-sm border-b border-surface-container-high">
+<span>URBAN FESTIVAL</span>
+<span>ALMATY</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">
+            Almaty Urban Fest × Kaspi / Forte
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+            Крупнейший молодежный фестиваль городской культуры и современной музыки. Полноценная интеграция финтех-экосистемы с безналичной зоной.
           </p>
-
-          <div class="mt-4 space-y-2 text-sm">
-
-            <div class="flex justify-between gap-4">
-              <span class="text-white/40">Университеты</span>
-              <span id="modal-universities" class="text-right">
-                KBTU, KazNU, Narxoz
+</div>
+<div class="my-space-lg p-space-md bg-surface-container-lowest border border-surface-container-high space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">Гостей на локации:</span>
+<span class="font-mono text-primary font-bold">42,000</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">Digital Reach:</span>
+<span class="font-mono text-primary font-bold">1,400,000+</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">Регистраций в приложении:</span>
+<span class="font-mono text-primary font-bold text-primary-fixed">18,400</span>
+</div>
+</div>
+<div class="font-label-caps text-[10px] text-secondary uppercase tracking-widest">
+          Результат: 100% план по CPA перевыполнен на 28%
+        </div>
+</div>
+<!-- Case 02 -->
+<div class="bg-surface-container border border-surface-container-high p-space-xl flex flex-col justify-between relative">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between font-mono text-caption text-secondary pb-space-sm border-b border-surface-container-high">
+<span>FASHION &amp; LUXURY</span>
+<span>MEDEU DISTRICT</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">
+            Digital Fashion Week Central Asia
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+            Синтез высокой моды и генеративного 3D арта. Закрытые показы дизайнеров, VIP лаундж премиального автомобильного бренда и бьюти-бары.
+          </p>
+</div>
+<div class="my-space-lg p-space-md bg-surface-container-lowest border border-surface-container-high space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">Брендов-участников:</span>
+<span class="font-mono text-primary font-bold">14 Fashion домов</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">Инфлюенсеры (Tier-1):</span>
+<span class="font-mono text-primary font-bold">120 гостей</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">Международные медиа:</span>
+<span class="font-mono text-primary font-bold text-primary-fixed">Vogue, Harper's</span>
+</div>
+</div>
+<div class="font-label-caps text-[10px] text-secondary uppercase tracking-widest">
+          Результат: Охват в Instagram &amp; TikTok свыше 4.2M
+        </div>
+</div>
+<!-- Case 03 -->
+<div class="bg-surface-container border border-surface-container-high p-space-xl flex flex-col justify-between relative">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between font-mono text-caption text-secondary pb-space-sm border-b border-surface-container-high">
+<span>TECH &amp; TALENT</span>
+<span>KBTU CAMPUS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">
+            Gen Z Tech Summit
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+            Технологический баттл и ярмарка карьерных возможностей для лучших студентов КБТУ, КазНУ, СДУ и Satbayev University.
+          </p>
+</div>
+<div class="my-space-lg p-space-md bg-surface-container-lowest border border-surface-container-high space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">Студентов на площадке:</span>
+<span class="font-mono text-primary font-bold">8,500</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">IT Стендов корпораций:</span>
+<span class="font-mono text-primary font-bold">22 холдинга</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-caption text-caption text-secondary">Собранных резюме:</span>
+<span class="font-mono text-primary font-bold text-primary-fixed">3,120 CV</span>
+</div>
+</div>
+<div class="font-label-caps text-[10px] text-secondary uppercase tracking-widest">
+          Результат: Прямой найм 420 специалистов уровня Junior/Middle
+        </div>
+</div>
+</div>
+</section>
+<!-- LED TEASER -->
+<section class="w-full px-gutter-desktop pt-space-3xl">
+<a href="led.html" class="max-w-6xl mx-auto bg-surface-container-lowest border border-surface-container-high p-space-xl md:p-space-2xl flex flex-col md:flex-row md:items-center justify-between gap-space-lg hover:border-primary/50 transition-colors group">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] block mb-2">[ LED MEDIA · ALMATY ]</span>
+<h2 class="font-headline-md text-headline-md text-primary">Реклама на LED-экранах в университетах</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">Экраны в КБТУ, КазНУ, Narxoz и других кампусах. Рассчитайте кампанию онлайн.</p>
+</div>
+<span class="shrink-0 inline-flex items-center justify-center gap-3 bg-white text-black px-7 py-4 rounded-full font-semibold group-hover:bg-white/85 transition">Смотреть экраны <span aria-hidden="true">→</span></span>
+</a>
+</section>
+<!-- CTA / CONVERSION FORM SECTION -->
+<section class="w-full px-gutter-desktop py-space-3xl" id="partner-form">
+<div class="max-w-6xl mx-auto bg-surface-container-lowest border border-surface-container-high p-space-xl md:p-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Info Column -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-xl">
+<div class="space-y-space-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em]">[ PARTNERSHIP DESK ]</span>
+<h2 class="font-headline-md text-headline-md text-primary">
+              Интегрируйте ваш бренд в главные события года
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">
+              Заполните бриф на спонсорство. Наша дирекция подготовит медиаплан, матрицу охвата и расчет инвестиций в течение 24 часов.
+            </p>
+</div>
+<div class="space-y-space-md pt-space-md border-t border-surface-container-high">
+<div class="space-y-1">
+<span class="font-caption text-[10px] text-secondary uppercase tracking-widest">ПРЯМОЙ КОНТАКТ ДИРЕКЦИИ</span>
+<p class="font-mono text-primary text-body-sm"><a href="https://wa.me/77772098007" target="_blank" class="hover:underline">+7 777 209 80 07</a> · WhatsApp</p>
+<p class="font-mono text-primary text-body-sm"><a href="mailto:partners@regata.asia" class="hover:underline">partners@regata.asia</a></p>
+</div>
+<div class="space-y-1">
+<span class="font-caption text-[10px] text-secondary uppercase tracking-widest">ЛОКАЦИЯ ОФИСА</span>
+<p class="font-body-sm text-body-sm text-on-surface">Республика Казахстан, г. Алматы, пр. Достык, 160</p>
+</div>
+</div>
+</div>
+<!-- Form Column -->
+<div class="lg:col-span-7">
+<form id="partner-brief" class="flex flex-col gap-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] uppercase text-secondary tracking-widest">Ваше имя *</label>
+<input class="w-full bg-surface border-b border-surface-container-high focus:border-primary text-on-surface px-3 py-2 text-body-sm focus:outline-none transition-colors" id="pf-name" placeholder="Аскар Сабитов" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] uppercase text-secondary tracking-widest">Компания / Бренд *</label>
+<input class="w-full bg-surface border-b border-surface-container-high focus:border-primary text-on-surface px-3 py-2 text-body-sm focus:outline-none transition-colors" id="pf-company" placeholder="Techno Group / Fintech Co." required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] uppercase text-secondary tracking-widest">Телефон / Telegram *</label>
+<input class="w-full bg-surface border-b border-surface-container-high focus:border-primary text-on-surface px-3 py-2 text-body-sm focus:outline-none transition-colors" id="pf-phone" placeholder="+7 (701) 000-00-00" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] uppercase text-secondary tracking-widest">Интересующий формат ивента</label>
+<select id="pf-format" class="w-full bg-surface border-b border-surface-container-high focus:border-primary text-on-surface px-3 py-2 text-body-sm focus:outline-none transition-colors cursor-pointer">
+<option value="fest">Музыкальный фестиваль (Open Air)</option>
+<option value="forum">Деловой / Tech форум &amp; Expo</option>
+<option value="popup">Камерный pop-up &amp; fashion показ</option>
+<option value="custom">Индивидуальный спецпроект под ключ</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-[10px] uppercase text-secondary tracking-widest">Задачи кампании и пожелания</label>
+<textarea class="w-full bg-surface border-b border-surface-container-high focus:border-primary text-on-surface px-3 py-2 text-body-sm focus:outline-none transition-colors" id="pf-comment" placeholder="Расскажите о KPI бренда: привлечение лидов, охват, продуктовый семплинг или статусное позиционирование..." rows="3"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md pt-space-sm">
+<span class="font-caption text-[10px] text-secondary max-w-xs">
+                Нажимая кнопку, вы откроете WhatsApp с готовой заявкой.
               </span>
-            </div>
-
-            <div class="flex justify-between gap-4">
-              <span class="text-white/40">Экраны</span>
-              <span id="modal-screens">3</span>
-            </div>
-
-            <div class="flex justify-between gap-4">
-              <span class="text-white/40">Длительность</span>
-              <span id="modal-duration">1 неделя</span>
-            </div>
-
-            <div class="flex justify-between gap-4">
-              <span class="text-white/40">Стоимость</span>
-              <span id="modal-price">482 000 ₸</span>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <button
-          type="submit"
-          class="w-full bg-white text-black rounded-full py-4 font-semibold hover:bg-white/85 transition">
-          Отправить заявку в WhatsApp
-        </button>
-
-        <p class="text-xs text-white/25 text-center">
-          Нажимая кнопку, вы открываете WhatsApp для отправки заявки.
-        </p>
-
-      </form>
-
-    </div>
-  </div>
-
-
-  <script>
-
-    const WHATSAPP_NUMBER = "77772098007";
-
-    let activeScreens = 3;
-    let durationWeeks = 1;
-    let discountRate = 0;
-
-
-    const modal = document.getElementById("campaign-modal");
-    const closeModalButton = document.getElementById("close-modal");
-    const modalBackdrop = document.getElementById("modal-backdrop");
-
-    const screenCountElement = document.getElementById("screen-count");
-    const reachElement = document.getElementById("calc-reach");
-    const playsElement = document.getElementById("calc-plays");
-    const priceElement = document.getElementById("calc-price");
-
-    const modalUniversities = document.getElementById("modal-universities");
-    const modalScreens = document.getElementById("modal-screens");
-    const modalDuration = document.getElementById("modal-duration");
-    const modalPrice = document.getElementById("modal-price");
-
-
-    function getSelectedUniversities() {
-      return [...document.querySelectorAll(".uni-chip.active")]
-        .map(chip => chip.dataset.name);
-    }
-
-
-    function getDurationName() {
-      if (durationWeeks === 1) return "1 неделя";
-      if (durationWeeks === 2) return "2 недели";
-      return "1 месяц";
-    }
-
-
-    function calculate() {
-
-      const selected = [...document.querySelectorAll(".uni-chip.active")];
-
-      let totalBasePrice = 0;
-      let totalReach = 0;
-
-      selected.forEach(chip => {
-        totalBasePrice += Number(chip.dataset.price);
-        totalReach += Number(chip.dataset.reach);
-      });
-
-
-      const screenFactor = activeScreens / 3;
-
-      let subtotal = totalBasePrice * screenFactor * durationWeeks;
-
-      const discount = subtotal * discountRate;
-
-      const finalPrice = Math.round(subtotal - discount);
-
-      const scaledReach = Math.round(
-        totalReach * Math.min(1.8, 1 + activeScreens * 0.15)
-      );
-
-      const plays = Math.round(
-        activeScreens * durationWeeks * 1680
-      );
-
-
-      reachElement.textContent =
-        scaledReach.toLocaleString("ru-RU") + "+";
-
-      playsElement.textContent =
-        plays.toLocaleString("ru-RU");
-
-      priceElement.textContent =
-        finalPrice.toLocaleString("ru-RU") + " ₸";
-
-
-      screenCountElement.textContent = activeScreens;
-
-      return {
-        universities: getSelectedUniversities(),
-        screens: activeScreens,
-        duration: getDurationName(),
-        price: finalPrice,
-        reach: scaledReach,
-        plays: plays
-      };
-    }
-
-
-    document.querySelectorAll(".uni-chip").forEach(chip => {
-
-      chip.addEventListener("click", () => {
-
-        chip.classList.toggle("active");
-
-        const selected =
-          document.querySelectorAll(".uni-chip.active");
-
-        if (selected.length === 0) {
-          chip.classList.add("active");
-        }
-
-        calculate();
-
-      });
-
-    });
-
-
-    document.getElementById("plus-screen").addEventListener("click", () => {
-
-      if (activeScreens < 48) {
-        activeScreens++;
-        calculate();
-      }
-
-    });
-
-
-    document.getElementById("minus-screen").addEventListener("click", () => {
-
-      if (activeScreens > 1) {
-        activeScreens--;
-        calculate();
-      }
-
-    });
-
-
-    document.querySelectorAll(".duration-btn").forEach(button => {
-
-      button.addEventListener("click", () => {
-
-        document.querySelectorAll(".duration-btn")
-          .forEach(item => item.classList.remove("active"));
-
-        button.classList.add("active");
-
-        durationWeeks = Number(button.dataset.weeks);
-        discountRate = Number(button.dataset.discount);
-
-        calculate();
-
-      });
-
-    });
-
-
-    function openModal() {
-
-      const result = calculate();
-
-      modal.classList.remove("modal-hidden");
-      modal.classList.add("modal-visible");
-
-      document.body.style.overflow = "hidden";
-
-      modalUniversities.textContent =
-        result.universities.join(", ");
-
-      modalScreens.textContent =
-        result.screens;
-
-      modalDuration.textContent =
-        result.duration;
-
-      modalPrice.textContent =
-        result.price.toLocaleString("ru-RU") + " ₸";
-    }
-
-
-    function closeModal() {
-
-      modal.classList.remove("modal-visible");
-      modal.classList.add("modal-hidden");
-
-      document.body.style.overflow = "";
-
-    }
-
-
-    document.querySelectorAll(".open-modal").forEach(button => {
-
-      button.addEventListener("click", openModal);
-
-    });
-
-
-    closeModalButton.addEventListener("click", closeModal);
-
-    modalBackdrop.addEventListener("click", closeModal);
-
-
-    document.addEventListener("keydown", event => {
-
-      if (event.key === "Escape") {
-        closeModal();
-      }
-
-    });
-
-
-    document.getElementById("campaign-form").addEventListener("submit", event => {
-
-      event.preventDefault();
-
-      const result = calculate();
-
-      const company =
-        document.getElementById("company").value.trim();
-
-      const name =
-        document.getElementById("contact-name").value.trim();
-
-      const phone =
-        document.getElementById("phone").value.trim();
-
-      const instagram =
-        document.getElementById("instagram").value.trim();
-
-      const comment =
-        document.getElementById("comment").value.trim();
-
-
-      const message =
-`Здравствуйте! Хочу запустить рекламную кампанию на LED-экранах Regata.Asia.
-
-Компания: ${company}
-Имя: ${name}
-Телефон: ${phone}
-Instagram: ${instagram || "не указан"}
-
-Университеты: ${result.universities.join(", ")}
-Количество экранов: ${result.screens}
-Длительность: ${result.duration}
-Ориентировочная стоимость: ${result.price.toLocaleString("ru-RU")} ₸
-Ориентировочный охват: ${result.reach.toLocaleString("ru-RU")}+
-Показов: ${result.plays.toLocaleString("ru-RU")}
-
-Комментарий:
-${comment || "нет"}
-
-Хочу узнать доступность экранов и условия размещения.`;
-
-      const whatsappURL =
-        "https://wa.me/" +
-        WHATSAPP_NUMBER +
-        "?text=" +
-        encodeURIComponent(message);
-
-      window.open(whatsappURL, "_blank");
-
-    });
-
-
-    calculate();
-
-  </script>
-
-</body>
-</html>
+<button class="px-space-xl py-space-md bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded-none hover:bg-surface-container-lowest hover:text-primary transition-all duration-300 border border-primary shrink-0 w-full sm:w-auto" type="submit">
+                Отправить бриф в WhatsApp
+              </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant mt-space-3xl"><div class="w-full px-gutter-desktop py-space-3xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-column-gap mb-space-3xl"><div class="md:col-span-5 flex flex-col justify-between pr-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary tracking-tight">Regata<span class="text-white/40">.Asia</span></span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md font-light">Архитектурная цифровая медиасеть ультрачетких экранов 4K Ultra HD в главных академических резиденциях Алматы. Интеллектуальный контакт с новым поколением лидеров мнений.</p></div><div class="pt-space-xl"><span class="font-label-caps text-label-caps uppercase text-outline tracking-widest block mb-space-2xs">Центральная локация</span><p class="font-body-sm text-body-sm text-on-surface">Алматы, Медеуский район, пр. Достык, 160</p></div></div><div class="md:col-span-2 space-y-space-sm"><span class="font-label-caps text-label-caps uppercase text-outline tracking-widest block">Навигация сети</span><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">Академический периметр</li><li class="hover:text-primary transition-colors cursor-pointer">Карта инсталляций</li><li class="hover:text-primary transition-colors cursor-pointer">Ивенты и спецпроекты</li><li class="hover:text-primary transition-colors cursor-pointer">Тайм-слоты и Reach</li></ul></div><div class="md:col-span-2 space-y-space-sm"><span class="font-label-caps text-label-caps uppercase text-outline tracking-widest block">Документация</span><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">Презентация сети (PDF)</li><li class="hover:text-primary transition-colors cursor-pointer">Стандарты вещания 4K</li><li class="hover:text-primary transition-colors cursor-pointer">Технический регламент</li><li class="hover:text-primary transition-colors cursor-pointer">Договор оферты</li></ul></div><div class="md:col-span-3 space-y-space-sm"><span class="font-label-caps text-label-caps uppercase text-outline tracking-widest block">Коммуникация</span><div class="space-y-space-xs font-body-sm text-body-sm"><p class="text-primary font-medium"><a href="https://wa.me/77772098007" target="_blank" class="hover:underline">+7 777 209 80 07</a></p><p>WhatsApp</p><p class="text-primary font-medium pt-space-xs"><a href="mailto:partners@regata.asia" class="hover:underline">partners@regata.asia</a></p><p class="font-caption text-caption text-secondary pt-space-xs">Отдел медиапланирования и спецпроектов: 10:00 — 19:00 ALMT</p></div></div></div><div class="pt-space-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-space-md text-secondary font-caption text-caption"><div class="flex items-center gap-space-lg"><span class="uppercase tracking-widest font-label-caps text-label-caps">Regata.Asia © 2026</span></div><div class="flex items-center gap-space-lg"><span>Политика конфиденциальности</span><span>Правила размещения креативов</span><span>Алматы, Казахстан</span></div></div></div></footer><script>
+(function(){
+  var WHATSAPP_NUMBER = "77772098007";
+  var form = document.getElementById("partner-brief");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var v = function(id){ return document.getElementById(id).value.trim(); };
+    var fmt = document.getElementById("pf-format");
+    var msg = "Здравствуйте! Хочу обсудить спонсорство / интеграцию в ивент Regata.Asia.\n\n" +
+      "Имя: " + v("pf-name") + "\n" +
+      "Компания: " + v("pf-company") + "\n" +
+      "Телефон / Telegram: " + v("pf-phone") + "\n" +
+      "Формат: " + fmt.options[fmt.selectedIndex].text + "\n" +
+      "\n" +
+      "Задачи:\n" + (v("pf-comment") || "нет");
+    window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg), "_blank");
+  });
+})();
+</script></body></html>
